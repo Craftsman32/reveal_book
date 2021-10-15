@@ -8,10 +8,9 @@
     />
 
     <title>reveal.js</title>
-
     <link rel="stylesheet" href="reveal.js/dist/reset.css" />
     <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css" id="theme" />
 
     <!-- Theme used for syntax highlighted code -->
     <link
@@ -19,60 +18,50 @@
       href="reveal.js/plugin/highlight/monokai.css"
       id="highlight-theme"
     />
+    <style>
+      .reveal  {font-size: 150%;}
+      </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section
-          data-markdown
-          data-separator="-----"
-          data-separator-vertical="---"
-        >
-          <textarea data-template>
-            # Título
-
-            ### Date
-
-            -----
-            
-            Vertical slides are separated by `- - -`
-            
-            ---
-            
-            Vertical slides are separated by `- - -` .
-            
-            ---
-            
-            Vertical slides are separated by `- - -` ..
-     
-            -----
-            
-            # title
-            ## skills
-            * one
-            * two
-            * three
-            
-            ## heading
-            8. three
-            1. one
-            1. two
-         
-            
-            -----
-            
-
-            # Questions
-
-            -----
-
-            ## made with
-
-            #### [reveal.js](https://github.com/hakimel/reveal.js)
-
-            #### [excalidraw](https://github.com/excalidraw/excalidraw)
-
-          </textarea>
+        <section data-auto-animate>
+          <h3>Luis Romero Ramos</h3>
+        </section>
+        <section data-transition="slide" data-auto-animate>
+          <h3>Luis Romero Ramos</h3>
+          <h4 style="color: #DE744C;">Desarrollo de experiencias multimedia</h4>
+          <a href="mailto:luisrr.gamedev@gmail.com">luisrr.gamedev@gmail.com</a>
+        </section>
+        <section data-transition="convex">
+          <h5>Desarrollo  de Recorridos históricos interactivos</h5>
+          <img data-src="img/zocalo_01.jpg">
+          <a href="http://cmm.cenart.gob.mx/zocalo/" target="_blank">http://cmm.cenart.gob.mx/zocalo/</a>
+        </section>
+        <section data-transition="convex">
+          <h4>Desarrollo de videojuegos de Realidad Aumentada</h4>
+          <img data-src="img/memento_mori.jpg">
+          <a href="http://mementomori.cenart.gob.mx/" target="_blank">http://mementomori.cenart.gob.mx/</a>
+        </section>
+        <section data-transition="convex">
+          <h4>Instalaciones interactivas con realidad aumentada</h4>
+          <img data-src="img/instalaciones.jpg">
+          <p>Exposición: “Tesla: El futuro me pertenece”</p>
+        </section>
+        <section data-transition="convex">
+          <h4>Talleres de montaje de impresoras 3D</h4>
+          <img data-src="img/impresion 3D.jpg">
+          <p>Hardware y software libre</p>
+        </section>
+        <section data-transition="convex">
+          <h4>Desarrollo de experiencias de Realidad Virtual</h4>
+          <img data-src="img/ciudad de las artes RV.jpg">
+          <p>Ciudad de las Artes</p>
+        </section>
+        <section data-transition="convex">
+          <h4>Trabajos actuales</h4>
+          <p>Coordinador del Laboratorio de Realidad Virtual y Videojuegos, Cenart</p>
+          <p>Docente de materias de programación, SAE Institute México</p>
         </section>
       </div>
     </div>
@@ -88,6 +77,8 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        autoSlide: 5000,
+        Loop: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
